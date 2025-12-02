@@ -1,0 +1,69 @@
+
+<html>
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slate Auth</title>
+  <script src="https://static.localzohocdn.com/catalyst/sdk/js/4.6.1/catalystWebSDK.js"></script>
+  <script src="/__catalyst/sdk/init.js"></script>
+  <script src="main.js"></script>
+  <style>
+    .card {
+        max-width: 500px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        background-color: #a5a4a4;
+    }
+    .title {
+        font-size: 23px;
+        color: black;
+    }
+    button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 50%;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+    button:hover,
+    a:hover {
+        opacity: 0.7;
+    }
+    body {
+        background-color: #a5a4a4;
+        font-size: 20px;
+        visibility: hidden;
+    }
+    p {
+        font-family: 'Trebuchet MS', Arial, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+    }
+  </style>
+</head>
+<body onload="showProfile()">
+   <h1 style="text-align:center">User Profile Information</h1>
+    <div class="card">
+      <img width="200px" height="450px" src="https://cdn2.iconfinder.com/data/icons/user-management/512/profile_settings-512.png" alt="John" style="width:80px;height: 80px;" >
+      <p class="title" id="fname"></p>
+      <p class="title" id="lname"></p>
+      <p class="title" id="mailid"></p>
+      <p class="title" id="tzone"></p>
+      <p class="title" id="ctime"></p>
+      <p><button onclick="logout()">Logout</button></p>
+    </div>
+</body>
+</html>
